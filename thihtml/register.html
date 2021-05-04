@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script >
+         function kiemtra()
+         {
+            if( document.dk.full.value == "" ) {
+            alert( "Please provide your name!" );
+            document.dk.full.focus() ;
+            return false;
+         }
+
+         if( document.dk.login.value == "" ) {
+            alert( "Please provide your name!" );
+            document.dk.login.focus() ;
+            return false;
+         }
+        
+             var sPhone = dk.Phone.value;
+             var rPhone =/^\d{8,12}$/;
+       if(!rPhone.test(sPhone))
+             {
+                 alert("The Phone cannot left blank!");
+                 dk.phone.focus();
+                 return false;
+             }  
+            
+             var sMail = dk.mail.value;
+             var reMail = /^\w+[@]\w+[.]\w{3}([.]\w{2})?$/;
+             if(!reMail.test(sMail))
+             {
+                 alert("The Mail cannot left blank!");
+                 dk.mail.focus();
+        return false;
+             }
+         }
+        </script>
+</head>
+<body>
+  <h1>IT Solutions</h1>
+
+  
+    <div id="menu">
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="#">INTRO</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="Register.html">REGISTER</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <p id="title">Register Form</p>
+        <form name="dk" action="Register.html" onsubmit="return (kiemtra());">
+            <table width="300" height="200" align="center">
+
+                <tr>    
+                    <td align="center">Login name:</td>
+                    <td><input type="text" name="logn" ></td>
+                </tr>
+
+
+                <tr>
+                    <td align="center">Password:</td>
+                    <td><input type="password" ></td>
+                </tr>
+
+
+                <tr>
+                    <td align="center">Confirm Password:</td>
+                    <td><input type="password" ></td>
+                </tr>
+
+
+                <tr>
+                    <td align="center">Full Name:</td>
+                    <td><input name=”full” autofocus required tabindex="1"></td>
+                </tr>
+                
+                
+                <tr>
+                    <td align="center">Gender:</td>
+                    <td><input type="radio" name="chua" checked> Male
+                        <input type="radio" name="chua"> Female
+                    </td>
+                </tr>
+            <tr>
+                <td>Date of Birth</td>
+                    <td><input placeholder=dd-----yyyy type=”text” id=”namsinh”/></td>
+                    </tr>
+                
+
+                <tr>
+                    <td align="center">email:</td>
+                    <td><input name="mail" ></td>
+                </tr>
+
+                <tr>
+                    <td align="center">Phone:</td>
+                    <td><input name="phone" ></td>
+                </tr>
+
+                <tr>
+                    <td align="center">Comment</td>
+                    <td>
+                        <textarea rows="7" cols="50"></textarea>
+                    </td>
+                </tr>
+                
+                <tr >
+                    <td colspan="2" align="centet">
+                        <button   type="submit" value="Submit">Submit</button>
+                        <button type="reset" value="Reset">Reset</button>
+                </tr>
+
+                
+            </table>
+         
+            
+          
+          
+      </form>
+</body>
+</html>
+      
+      
+</body>
+</html>
