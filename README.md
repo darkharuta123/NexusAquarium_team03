@@ -16,7 +16,7 @@ NexusAquarium
 
 + List Of Member:
 
-1. Lê Văn A
+1. Huỳnh Gia Kiệt
 (Student0000001)
 
 2. Trần Văn Sê
